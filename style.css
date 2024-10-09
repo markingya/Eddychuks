@@ -64,7 +64,7 @@ h2{
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-	transition: all 300ms ease-in-out;
+	transition: all 0s ease-in-out;
     min-height: 10dvh;
     width: 70%;
     font-family: "Montserrat";
@@ -208,7 +208,7 @@ h2{
     align-items: center;
     z-index: 4;
     width: 70%;
-    opacity: 30%;
+    opacity: 50%;
 }
 
 .right img{
@@ -282,16 +282,37 @@ h2{
     color: #f9f9f9;
 }
 
-.fa-registered{
+/* .fa-registered{
     font-size: 1.5rem;
     display: inline;
-}
+} */
 
   
   
 
 
 @media(max-width: 900px){
+
+    .right{
+        width: 90% !important;
+        opacity: 80% !important;
+    }
+
+    #home{
+        min-height: calc(100dvh - 5dvh);
+        padding-top: 5dvh;
+       }
+
+    .nav-bar{
+        min-height: 1dvh;
+        padding: 1.2em 2.2em;
+        top: 4dvh;
+        width: 80%;
+       }
+    
+       .logo-img img{
+        width: 3em;
+    }
     
     .nav-bar{
         display: grid;
@@ -406,20 +427,32 @@ h2{
     
     .footer h5{
         font-family: 'Halogen-Black';
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #f9f9f9;
     }
 
-    .fa-registered{
+    /* .fa-registered{
         font-size: 1rem;
-    }
+    } */
     
 }
 
 @media(max-width: 500px){
-    .home-head h1{
-        font-size: 1.5rem;
-    }
+   .nav-bar{
+    min-height: 1dvh;
+    padding: 1.2em 2.2em;
+    top: 4dvh;
+    width: 80%;
+   }
+
+   .logo-img img{
+    width: 3em;
+}
+
+   #home{
+    min-height: calc(100dvh - 5dvh);
+    padding-top: 5dvh;
+   }
 
     .home-paragraph p{
         width: 85%;
@@ -429,6 +462,18 @@ h2{
         font-size: 1rem;
     }
 
+    .right{
+        width: 100% !important;
+        overflow: hidden;
+        opacity: 80%;
+    }
+
+    .right img{
+        width: 300dvw;
+        object-fit: cover;
+        display: block;
+    }
+
     .fa-youtube{
         font-size: 1.5rem;
     }
@@ -436,36 +481,15 @@ h2{
     .fa-whatsapp{
         font-size: 1.5rem;
     }
-
-    .footer img{
-        width: 6em;
-    }
-    
-    .footer h5{
-        font-size: 1.5rem;
-    }
     
 }
 
 @media(max-width: 400px){
-    .home-head h1{
-        font-size: 1rem;
-    }
     .footer h5{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .footer img{
-        width: 5em;
-    }
-
-    .fa-registered{
-        font-size: 0.5em;
-    }
-}
-
-@media(max-width: 320px){
-    .fa-registered{
-        font-size: 0.5em;
+        width: 6em;
     }
 }
