@@ -54,18 +54,18 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #222831;
-    border-radius: 2em;
+    border: 3px solid #222831;
+    border-radius: 3em;
     background: #191919D9;
     color: #f9f9f9;
-    padding: 2em 3em;
+    padding: 1.5em 3em;
     position: fixed;
     top: 5dvh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
 	transition: all 0s ease-in-out;
-    min-height: 10dvh;
+    min-height: 5dvh;
     width: 70%;
     font-family: "Montserrat";
     font-size: 0.8rem;
@@ -134,7 +134,7 @@ h2{
 
 
 #home{
-    min-height: calc(100dvh - 15dvh);
+    min-height: calc(100dvh - 14dvh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,12 +282,76 @@ h2{
     color: #f9f9f9;
 }
 
-/* .fa-registered{
-    font-size: 1.5rem;
-    display: inline;
-} */
 
+
+.book-head h2{
+    margin-top: 3rem;
+}
+
+ol li{
+    padding-bottom: 0.8rem;
+}
+
+.book-info{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.book-info p{
+    text-align: center;
+}
+
+.book-info h3{
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.booking{
+    background: #f9f9f9;
+    border-radius: 20px;
+    margin: 5% 5% 8rem 5%;
+}
   
+.confirm button{
+    background: none;
+    border: none;
+}
+
+.confirm button a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.confirm a:hover{
+    .fa-arrow-right{
+    margin-right: 1.5rem;
+    transition: 0.5s;
+    }
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+    border: #222831 solid 2px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 0.4em;
+    padding-right: 1em;
+}
+
+.confirm .fa-arrow-right{
+    background: #222831;
+    border-radius: 0.4em 0 0 0.4em;
+    padding: 0.8em 0.8em;
+    margin-right: 1em;
+}
   
 
 
@@ -379,6 +443,10 @@ h2{
 
     .home-paragraph p{
         width: 70%;
+    }
+
+    .book-head h2{
+        margin-top: 4rem;
     }
 
 
@@ -480,6 +548,10 @@ h2{
     
     .fa-whatsapp{
         font-size: 1.5rem;
+    }
+
+    .book-head h2{
+        margin-top: 1rem;
     }
     
 }
